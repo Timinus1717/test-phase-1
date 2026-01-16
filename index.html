@@ -49,6 +49,22 @@
 }
 </script>
 </head>
+  <script type="module">
+  import React, { useState, useEffect } from 'react';
+  import { createRoot } from 'react-dom/client';
+
+  function Game() {
+    return (
+      <div className="flex flex-col items-center justify-center h-screen text-white">
+        <h1 className="text-4xl retro-text">MALL QUEST</h1>
+        <p className="mt-4">The game logic needs to be pasted here!</p>
+      </div>
+    );
+  }
+
+  const root = createRoot(document.getElementById('root'));
+  root.render(<Game />);
+</script>
   <body>
     <div id="root"></div>
     <div class="crt-overlay"></div>
